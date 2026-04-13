@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GYMSHARK Motivación</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body{
+    background: #0f0f0f;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* NAVBAR */
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+nav h1{
+    color: #00ffae;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #00ffae;
+}
+
+/* HERO */
+.hero{
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1558611848-73f7eb4001a1') center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h2{
+    font-size: 50px;
+    animation: fadeIn 2s ease;
+}
+
+.hero span{
+    color:#00ffae;
+}
+
+/* ANIMACIONES */
+@keyframes fadeIn{
+    from{opacity:0; transform: translateY(50px);}
+    to{opacity:1; transform: translateY(0);}
+}
+
+/* SECCIÓN */
+.section{
+    padding: 80px 20px;
+    text-align:center;
+}
+
+.section h2{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+/* TARJETAS */
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.card{
+    width:300px;
+    background:#1a1a1a;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffae;
+}
+
+/* TEXTO MOTIVACIONAL */
+.motivation{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.6;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#000;
+    margin-top:50px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<h1>GYMSHARK</h1>
+<div>
+<a href="#">Inicio</a>
+<a href="#">Atletas</a>
+<a href="#">Motivación</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h2>Bienvenido <span>Jean Olaya</span><br>Rompe tus límites 💪</h2>
+</section>
+
+<!-- DAVID LAID -->
+<section class="section">
+<h2>Inspiración: David Laid</h2>
+<div class="cards">
+<div class="card">
+<img src="https://i.imgur.com/VKQYF5p.jpg">
+</div>
+</div>
+</section>
+
+<!-- ATLETAS -->
+<section class="section">
+<h2>Atletas GYMSHARK</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1546484959-f3a4f6c8d7b3">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
+</div>
+
+</div>
+</section>
+
+<!-- ROPA -->
+<section class="section">
+<h2>Prendas GYMSHARK</h2>
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526401485004-2fda9f2b0b20">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba7">
+</div>
+
+</div>
+</section>
+
+<!-- MOTIVACIÓN -->
+<section class="section">
+<h2>Motivación</h2>
+<p class="motivation">
+No se trata de ser el mejor desde el primer día, se trata de no rendirte jamás.
+Cada gota de sudor que cae es una prueba de que estás avanzando, de que estás construyendo una mejor versión de ti mismo. 
+El dolor que sientes hoy será la fuerza que tendrás mañana. No escuches a quienes dudan de ti, porque ellos no ven lo que tú eres capaz de lograr.
+
+El camino del esfuerzo no es fácil, pero es el único que realmente vale la pena. Habrá días en los que no tengas ganas, en los que todo parezca difícil, pero esos son los días que realmente cuentan.
+
+Sigue adelante, porque tu futuro yo te lo va a agradecer.
+</p>
+</section>
+
+<footer>
+<p>GYMSHARK - Nunca te rindas 🔥</p>
+</footer>
+
+</body>
+</html>
